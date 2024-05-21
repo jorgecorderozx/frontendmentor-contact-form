@@ -1,0 +1,57 @@
+:root {
+    --primary-lightGreen: hsl(148, 38%, 91%);
+    --primary-green: hsl(169, 82%, 27%);
+    --primary-red: hsl(0, 66%, 56%);
+    --secondary-white: hsl(0, 0%, 100%);
+    --secondary-mediumGray: hsl(186, 15%, 59%);
+    --secondary-darkGray: hsl(187, 24%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-lightGreen);
+    font-family: Karla, "sans serif";
+    height: 100vh;
+}
+
+form {
+    background-color: var(--secondary-white);
+}
+
+h1 {
+    color: var(--secondary-darkGray);
+}
+
+fieldset, button {
+    border: none;
+}
+
+.errorMessage {
+    color: var(--primary-red);
+    visibility: hidden;
+}
+
+.nonVisualLegend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+span {
+    color: var(--primary-green);
+}
+
+button {
+    background-color: var(--primary-green);
+    color: var(--secondary-white);
+}
