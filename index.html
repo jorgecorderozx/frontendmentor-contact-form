@@ -15,52 +15,48 @@
 
 </head>
 
-<body class="flex-container">
-    <form action="">
-
+<body class="flex-container flex-column">
+    <form class="flex-container flex-column" action="">
         <h1>Contact Us</h1>
-        <fieldset class="flex-container">
+        <fieldset class="flex-container flex-column">
             <legend class="nonVisualLegend">Personal Information</legend>
-            <div>
+            <div class="flex-container flex-column">
                 <label for="nameField">First Name <span>*</span></label>
-                <br>
                 <input type="text" id="nameField">
                 <p class="errorMessage">This field is required</p>
             </div>
-            <div>
+            <div class="flex-container flex-column">
                 <label for="lastNameField">Last Name <span>*</span></label>
-                <br>
+
                 <input type="text" id="lastNameField">
                 <p class="errorMessage">This field is required</p>
             </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="flex-container flex-column">
             <legend class="nonVisualLegend">Email Field</legend>
             <label for="emailField">Email Address <span>*</span></label>
-            <br>
             <input type="email" id="emailField">
             <p class="errorMessage">This field is required</p>
         </fieldset>
-        
+
         <fieldset>
             <legend>Query Type <span>*</span></legend>
-            <div>
+            <div class="flex-container indQueryContainer">
                 <input type="checkbox" id="generalEnquiryCheckBox">
                 <label for="generalEnquiryCheckBox">General Enquiry</label>
             </div>
-            
-            <div>
+
+            <div class="flex-container indQueryContainer">
                 <input type="checkbox" id="supportRequestCheckBox">
                 <label for="supportRequestCheckBox">Support Request</label>
             </div>
             <p class="errorMessage">This field is required</p>
         </fieldset>
-        
-        <fieldset>
+
+        <fieldset class="flex-container flex-column">
             <legend class="nonVisualLegend">Message Field</legend>
             <label for="messageField">Message <span>*</span></label>
-            <br>
             <textarea id="messageField"></textarea>
             <p class="errorMessage">This field is required</p>
         </fieldset>
