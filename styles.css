@@ -25,6 +25,7 @@ body {
     background-color: var(--primary-lightGreen);
     font-family: Karla, "sans serif";
     font-size: 16px;
+    font-weight: 400;
     min-height: 100vh;
     padding: 5vw;
     align-items: center;
@@ -39,15 +40,28 @@ form {
 
 h1 {
     color: var(--secondary-darkGray);
+    margin: 0 0 1.7rem 0;
 }
 
 fieldset, button {
     border: none;
 }
 
+fieldset:first-of-type label, fieldset:nth-of-type(2) label {
+    margin: 0 0 0.5rem 0;
+}
+
 input, .indQueryContainer {
     padding: 0.8rem;
     border: 0.1px solid;
+}
+
+.indQueryContainer label {
+    margin: 0;
+}
+
+.indQueryContainer:nth-of-type(2){
+    margin: 1rem 0 0 0;
 }
 
 input, .indQueryContainer {
@@ -61,6 +75,7 @@ input[type="checkbox"]{
 
 .errorMessage {
     color: var(--primary-red);
+    margin: 0.25rem 0;
     visibility: hidden;
 }
 
@@ -94,7 +109,27 @@ span {
     font-size: 18px;
 }
 
+textarea {
+    margin: 0.5rem 0 0 0;
+    padding: 6rem 0;
+    border-radius: 1rem; 
+}
+
+.consentCheckBoxContainer {
+    align-items: center;
+    gap: 1rem;
+}
+
+form > .errorMessage {
+    display: none;
+}
+
 button {
     background-color: var(--primary-green);
     color: var(--secondary-white);
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    font-size: inherit;
+    font-weight: 700;
+    margin: 2rem 0 0 0;
 }
