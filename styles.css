@@ -36,6 +36,7 @@ form {
     padding: 1.5rem;
     border-radius: 1rem;
     height: 100%;
+    width: 95%;
 }
 
 h1 {
@@ -53,7 +54,12 @@ fieldset:first-of-type label, fieldset:nth-of-type(2) label {
 
 input, .indQueryContainer {
     padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+input, .indQueryContainer, textarea {
     border: 0.1px solid;
+    border-color: var(--secondary-darkGray);
 }
 
 .indQueryContainer label {
@@ -62,15 +68,6 @@ input, .indQueryContainer {
 
 .indQueryContainer:nth-of-type(2){
     margin: 1rem 0 0 0;
-}
-
-input, .indQueryContainer {
-    border-radius: 0.5rem;
-}
-
-input[type="checkbox"]{
-    width: 13px;
-    height: 13px;
 }
 
 .errorMessage {
@@ -95,14 +92,17 @@ span {
 }
 
 .indQueryContainer{
+    position: relative;
     align-items: center;
-    gap: 0.5rem;
-    border: 1px solid var(--secondary-darkGray);
+    gap: 0.8rem;
+    padding: 0.8rem 1.6rem;
     margin: 1rem 0;
 }
 
-.indQueryContainer > input {
-    margin-left: 0.5rem;
+.roundCheckBox, .indQueryContainer > input {
+    width: 13px;
+    height: 13px;
+    transform: scale(1.5);
 }
 
 .indQueryContainer > label {
@@ -110,9 +110,9 @@ span {
 }
 
 textarea {
-    margin: 0.5rem 0 0 0;
-    padding: 6rem 0;
-    border-radius: 1rem; 
+    margin: 0.8rem 0 0 0;
+    padding: 7rem 0;
+    border-radius: 0.7rem; 
 }
 
 .consentCheckBoxContainer {
