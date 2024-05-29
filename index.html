@@ -22,12 +22,12 @@
             <legend class="nonVisualLegend">Personal Information</legend>
             <div class="flex-container flex-column">
                 <label for="nameField">First Name <span>*</span></label>
-                <input type="text" id="nameField">
+                <input type="text" id="nameField" required>
                 <p class="errorMessage">This field is required</p>
             </div>
             <div class="flex-container flex-column">
                 <label for="lastNameField">Last Name <span>*</span></label>
-                <input type="text" id="lastNameField">
+                <input type="text" id="lastNameField" required>
                 <p class="errorMessage">This field is required</p>
             </div>
         </fieldset>
@@ -35,19 +35,19 @@
         <fieldset class="flex-container flex-column">
             <legend class="nonVisualLegend">Email Field</legend>
             <label for="emailField">Email Address <span>*</span></label>
-            <input type="email" id="emailField">
+            <input type="email" id="emailField" required>
             <p class="errorMessage">This field is required</p>
         </fieldset>
 
         <fieldset>
             <legend>Query Type <span>*</span></legend>
             <div class="flex-container indQueryContainer">
-                <input type="radio" id="generalEnquiryCheckBox">
+                <input type="radio" name="queryType" id="generalEnquiryCheckBox" required>
                 <label for="generalEnquiryCheckBox">General Enquiry</label>
             </div>
 
             <div class="flex-container indQueryContainer">
-                <input type="radio" id="supportRequestCheckBox">
+                <input type="radio" name="queryType" id="supportRequestCheckBox" required>
                 <label for="supportRequestCheckBox">Support Request</label>
             </div>
             <p class="errorMessage">This field is required</p>
@@ -56,12 +56,12 @@
         <fieldset class="flex-container flex-column">
             <legend class="nonVisualLegend">Message Field</legend>
             <label for="messageField">Message <span>*</span></label>
-            <textarea id="messageField"></textarea>
+            <textarea id="messageField" required></textarea>
             <p class="errorMessage">This field is required</p>
         </fieldset>
 
         <div class="consentCheckBoxContainer flex-container">
-            <input type="checkbox" id="consentCheckBox">
+            <input type="checkbox" id="consentCheckBox" required>
             <label for="consentCheckBox">I consent to being contacted by the team <span>*</span></label>
         </div>
         <p class="errorMessage">To submit this form, please consent to being contacted</p>
