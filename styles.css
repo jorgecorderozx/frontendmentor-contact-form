@@ -50,7 +50,7 @@ fieldset, button {
 }
 
 fieldset:first-of-type label, fieldset:nth-of-type(2) label {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.7rem 0;
 }
 
 input, .indQueryContainer {
@@ -60,7 +60,7 @@ input, .indQueryContainer {
 
 input, .indQueryContainer, textarea {
     border: 0.1px solid;
-    border-color: var(--secondary-darkGray);
+    border-color: var(--secondary-mediumGray);
 }
 
 .indQueryContainer label {
@@ -112,8 +112,9 @@ span {
 
 textarea {
     margin: 0.8rem 0 0 0;
-    padding: 7rem 0;
-    border-radius: 0.7rem; 
+    padding: 1rem;
+    min-height: 250px;
+    border-radius: 0.7rem;
 }
 
 .consentCheckBoxContainer {
