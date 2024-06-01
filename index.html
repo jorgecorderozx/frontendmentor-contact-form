@@ -41,14 +41,15 @@
 
         <fieldset class="flex-container flex-column">
             <legend>Query Type <span>*</span></legend>
-            <div class="flex-container indQueryContainer">
-                <input type="radio" name="queryType" id="generalEnquiryCheckBox" name="General Enquiry" required>
-                <label for="generalEnquiryCheckBox">General Enquiry</label>
-            </div>
-
-            <div class="flex-container indQueryContainer">
-                <input type="radio" name="queryType" id="supportRequestCheckBox" name="Support Request" required>
-                <label for="supportRequestCheckBox">Support Request</label>
+            <div class="flex-container flex-column">
+                <div class="flex-container indQueryContainer">
+                    <input type="radio" name="queryType" id="generalEnquiryCheckBox" name="General Enquiry" required>
+                    <label for="generalEnquiryCheckBox">General Enquiry</label>
+                </div>
+                <div class="flex-container indQueryContainer">
+                    <input type="radio" name="queryType" id="supportRequestCheckBox" name="Support Request" required>
+                    <label for="supportRequestCheckBox">Support Request</label>
+                </div>
             </div>
             <p class="errorMessage">This field is required</p>
         </fieldset>
